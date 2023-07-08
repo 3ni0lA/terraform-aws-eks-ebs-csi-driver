@@ -26,7 +26,7 @@ resource "helm_release" "this" {
 
   name       = var.helm_release_name
   namespace  = var.k8s_namespace
-  repository = "https://kubernetes-sigs.github.io/aws-ebs-csi-driver"
+  repository = "https://github.com/kubernetes-sigs/aws-ebs-csi-driver"
   chart      = "aws-ebs-csi-driver"
   version    = var.chart_version_aws_ebs_csi_driver
 
